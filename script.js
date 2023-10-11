@@ -34,7 +34,7 @@ $(document).ready(function(){
       return Math.ceil(Math.random() * size);
     };
     
-    var questionGenerator = function () {
+    var randomQuestionGenerator = function () {
       var question = {};
       var num1 = randomNumberGenerator(10);
       var num2 = randomNumberGenerator(10);
@@ -42,7 +42,7 @@ $(document).ready(function(){
       if (operator === 1) {
         question.operator = "+";
       } else if (operator === 2) {
-        question.operator = "-";
+        question.operator = "-"; 
       } else if (operator === 3) {
         question.operator = "*";
       } else {
@@ -53,8 +53,11 @@ $(document).ready(function(){
       return question;
     };
     
+    
+
+
     var renderNewQuestion = function () {
-      currentQuestion = questionGenerator();
+      currentQuestion = randomQuestionGenerator();
       $('#equation').text(currentQuestion.equation);  
     };
     
