@@ -38,8 +38,17 @@ $(document).ready(function(){
       var question = {};
       var num1 = randomNumberGenerator(10);
       var num2 = randomNumberGenerator(10);
-      question.answer = num1 + num2;
-      question.equation = String(num1) + " + " + String(num2);
+      var operator = Math.ceil(Math.random() * 4);
+      if (operator === 1) {
+        question.operator = "+";
+      } else if (operator === 2) {
+        question.operator = "-";
+      } else if (operator === 3) {
+        question.operator = "*";
+      } else {
+        question.operator = "/";
+      }
+      question.equation = num1 + question.operator + num2;
       
       return question;
     };
@@ -64,31 +73,9 @@ $(document).ready(function(){
     });
     
     renderNewQuestion();
-
-    
-
   });
 
-  $(document).ready(function() {
-    $(".parameterButtons input[type='checkbox']").change(function() {
-      var equation = "";
-      if ($("#plus").is(":checked")) {
-        equation += " + ";
-      }
-      if ($("#minus").is(":checked")) {
-        equation += " - ";
-      }
-      if ($("#multiply").is(":checked")) {
-        equation += " * ";
-      }
-      if ($("#divide").is(":checked")) {
-        equation += " / ";
-      }
-      question.equation = equation.trim();
-      console.log(question.equation);
-    });
-  });
-
+  
   
 
   
