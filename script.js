@@ -43,12 +43,14 @@ var updateScore = function (amount) {
   
   var questionGenerator = function () {
     var question = {};
-    var num1 = randomNumberGenerator(10);
-    var num2 = randomNumberGenerator(10);
-    
+    // Get the selected max number from HTML input
+    var maxNumber = parseInt($('#max-number').val()); 
+    var num1 = randomNumberGenerator(maxNumber);
+    var num2 = randomNumberGenerator(maxNumber);
+  
     question.answer = num1 + num2;
     question.equation = String(num1) + " + " + String(num2) + " = ";
-    
+  
     return question;
   };
   
