@@ -1,4 +1,97 @@
 /*index.css*/
-h2 {
-    color: blue;
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Chalkduster", cursive;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+}
+
+.container {
+  background-color: #444;
+  border: 1px solid white;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.timer {
+    color: white;
+    border: white solid 3px;
+    font-size: 18px;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: "Chalkduster", cursive;
+ 
+}
+
+#equation {
+  font-family: "Chalkduster", cursive;
+  color: white;
+}
+
+#user-input {
+  font-family: "Chalkduster", cursive;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: white solid 3px;
+  width: 100px;
+  padding: 10px;
+}
+
+#time-left {
+  color: white;
+  font-family: "Chalkduster";
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: "Chalkduster", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+#score {
+  font-family: "Chalkduster", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+  #high-score {
+    color: red;
+    font-family: "Chalkduster", cursive;
+  color: white;
+    font-size: 30px;
   }
+
+footer {
+  text-align: center;
+  font-family: "Chalkduster", cursive;
+  color: white;
+  font-size: 16px;
+  margin-top: 50px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+
+
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

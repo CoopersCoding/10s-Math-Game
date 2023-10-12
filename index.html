@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
     <script src="script.js"></script>
   </head>
   <body>
+    <h1>10 Second Math Game</h1>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 text-center">
-            <h2>10 Second Math Game</h2>
-            <h3 id="time-left">10</h3>
-            <p>second(s) left</p>
+            <div class="timer">
+              <p>TIME LEFT:</p>
+              <h3 id="time-left">10</h3>
+            </div>
             <h1 id="equation"></h1>
-            <input id="user-input" type="number" />
             <h4>Score: <span id="score"></span></h4>
+            <input id="user-input" type="number" />
+            <br>
+            <br>
+            
             <!--Parameters Section-->
-        <div class="parameterButtons col-12 text-center">
-                <input type="checkbox" id="plus" checked />
-                <label for="plus" class="pr-2">+</label>
-                <input type="checkbox" id="minus" />
-                <label for="minus" class="pr-2">-</label>
-                <input type="checkbox" id="multiply" />
-                <label for="multiply" class="pr-2">ˣ</label>
-                <input type="checkbox" id="divide" />
-                <label for="divide" class="toggleFix">∕</label>
-                <input type="checkbox" id="random" />
-                <label for="divide" class="toggleFix">Random</label>
+        <div id="high-score" class="col-12 text-center">
+          <p>High Score: <span id="high-score"></span></p>
         </div>
-    
+      </div>
+    </div>
+  </div>
   </body>
+  <footer>Welcome to the "10 Second Math Game"! Simply enter the answer to the first math problem and the timer will start. You have 10 seconds to solve the problem. Good luck!</footer>
 </html>
