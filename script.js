@@ -75,31 +75,3 @@ var updateScore = function (amount) {
   
   renderNewQuestion();
 });
-
-
-    var renderNewQuestion = function () {
-      currentQuestion = randomQuestionGenerator();
-      $('#equation').text(currentQuestion.equation);  
-    };
-    
-    var checkAnswer = function (userInput, answer) {
-      if (userInput === answer) {
-        renderNewQuestion();
-        $('#user-input').val('');
-        updateTimeLeft(+1);
-        updateScore(+1);
-      }
-    };
-    
-    $('#user-input').on('keyup', function () {
-      startGame();
-      checkAnswer(Number($(this).val()), currentQuestion.answer);
-    });
-    
-    renderNewQuestion();
-
-
-  
-  
-
-  
